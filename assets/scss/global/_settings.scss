@@ -60,7 +60,7 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
-$white: #fefefe;
+$white: #ffffff;
 $outer-space: #2c3840;
 $body-background: $white;
 $body-font-color: $black;
@@ -108,7 +108,7 @@ $block-grid-max: 8;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
-$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$font-family-monospace: Consolas, 'Comfortaa', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
@@ -193,6 +193,8 @@ $form-label-color-invalid: get-color(alert);
 $input-error-color: get-color(alert);
 $input-error-font-size: rem-calc(12);
 $input-error-font-weight: $global-weight-bold;
+$form-label-color:$dark-gray;
+$form-label-font-size:rem-calc(20);
 
 // 7. Accordion
 // ------------
@@ -579,7 +581,7 @@ $tab-content-padding: 1rem;
 // 34. Thumbnail
 // -------------
 
-$thumbnail-border: solid 4px $white;
+$thumbnail-border:none;
 $thumbnail-margin-bottom: $global-margin;
 $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);

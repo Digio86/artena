@@ -1,3 +1,5 @@
+
+
 // Navigation breakpoints
 .desktop-menu, .top-bar-left {
   @include show-for(medium);
@@ -47,38 +49,102 @@
     color: #B9B9B9;
   }
 }
+.sticky-container{
+  height: 0 !important;
+}
 
+
+@include breakpoint(medium up) {
 // Tablet and desktop menu
+.sticky-container{
+  height: 134px !important;
+}
+
 .top-bar {
-  .menu .home a {
-    font-size: 1rem;
-    color: #B9B9B9;
+padding: 2rem;
+transition: all 0.2s ease-out;
+background-color: #cfb63a;
+border-bottom: 1px solid #000000;
+opacity: 1;
+max-width: 100% !important;
+
+  ul{
+    background-color: #cfb63a !important;
   }
+
+  .menu-text{color:#cfb63a;}
+
 
   .menu a {
     height: 45px;
+    font-family: 'Comfortaa', cursive;
     line-height: 45px;
-    color: #e6e6e6;
+    color: #000000;
+    text-transform: uppercase;
     padding-top: 0;
     padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
+    font-weight: 600;
+    @include breakpoint(large up) {
+    font-size: 1rem;
+  }
+  @include breakpoint(medium only) {
+  font-size: 0.8rem;
+}
     line-height: 1;
 
     &:hover:not(.button) {
-      background-color: #42525D;
+      /*background-color: #42525D;*/
+      border-bottom: 5px solid #000000;
     }
   }
 
-  .menu .active > a { background-color: lighten($outer-space, 10%); }
+  .menu .active > a { /*background-color: lighten($outer-space, 10%);*/ border-top: 5px solid #000000 !important;}
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu li:not(:last-child) { /*border-right: 1px solid #4e4e4e;*/ }
+
+  li.current-menu-item{border-top: 5px solid #000000 !important;}
 
   .dropdown.menu .submenu { border: 0; }
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
   .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
   .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
+  @include breakpoint(medium only) {
+.top-bar-left{
+  width: initial;
+    @include breakpoint(medium only) {
+      img.logo{
+        width: 70%;
+      }
+    }
+}
+}
+.top-bar-right{
+  position: relative;
+  top: 15px;
+}
+
+}
+
+@include breakpoint(large up) {
+.top-bar .menu > li:not(.menu-text) > a{padding: 1rem 2rem;}
+}
+@include breakpoint(medium only) {
+.top-bar .menu > li:not(.menu-text) > a{padding: 1rem 0.35rem;}
+}
+
+
+.smaller  {
+  padding: 1rem;
+  opacity: 0.9;
+  transition: all 0.5s ease-out;
+}
+
+//.smaller img { width: 100px; transition: all 0.5s linear; }
+
+.bigger  {
+  /*padding: 2rem;*/
+  transition: all 0.2s ease-in;
 }
 
 // Basic styles for post navigation. Nicolas Gallagher's "Micro clearfix"
@@ -95,3 +161,4 @@
 
 .nav-previous { float:left; }
 .nav-next { float:right; }
+}

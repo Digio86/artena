@@ -1,0 +1,30 @@
+
+#page-due-colonne{
+  padding: 3% 0 !important;
+  h2{text-decoration: underline; text-transform: uppercase; font-size:1.5em; padding-bottom: 3%;}
+  /*p{text-transform: uppercase; font-size: 0.9em; text-decoration: none; cursor: pointer;}*/
+  p { font-size: 0.9em; padding: 10px 0; }
+  img{ max-width: 200px;}
+
+  @include grid-row();
+  .colonna-sx{
+    @include grid-column(4);
+    text-align: right;
+  }
+  .colonna-dx{
+    @include grid-column(8);
+  }
+
+  @include breakpoint(small only) {
+    .colonna-sx{
+      display: none;
+    }
+    .colonna-dx{
+      @include grid-column(12);
+    }
+  }
+
+
+
+
+}

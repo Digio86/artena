@@ -1,0 +1,309 @@
+body{background-color:$white; font-family: 'Comfortaa',sans-serif;}
+section {padding: 3% 0; text-align: center;}
+section.container{padding: 0 !important;}
+section h3{font-family: 'Comfortaa',sans-serif; margin-bottom: 2%; text-transform: uppercase; font-weight: 700;  color: #000;}
+
+
+
+/*Social*/
+.fi-arrow-up{font-size: 1.5rem; color: #000000;}
+.button.round{
+  background-color: #cfb63a;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.button.round:hover{
+  background-color: #cfb63a;
+    .fi-arrow-up{color: #ffffff;}
+
+}
+
+.content{  @include grid-row(); padding: 0 5%;}
+
+#backtotop {
+  position: fixed;
+  bottom: 20px; right: 20px;
+  opacity: 0;
+  transition: all 0.5s linear;
+  z-index: 10;
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+#sliders{
+  padding: 0;
+
+
+  .grey-off{
+    -webkit-filter: grayscale(0);
+     filter: grayscale(0);
+     transition: all 1s ease-out;;
+  }
+
+  .grey-on{
+    -webkit-filter: grayscale(1);
+     filter: grayscale(1);
+    /* transition: all 1s linear;*/
+  }
+
+  ul.orbit-container{
+    height: inherit !important;
+  }
+}
+
+#about-us{
+
+}
+
+#eventi{
+  max-width: 100% !important;
+  .content{
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+       max-width: initial;
+       padding: 0;
+
+
+
+       .single-event{
+           padding: 0 !important;
+           position: relative;
+           @include breakpoint(small only) {
+               @include grid-column(12);
+           }
+           @include breakpoint(medium up) {
+               @include grid-column(4);
+           }
+           figure {
+             overflow: hidden; background-color: #000000;
+             img {
+                 width: 100%;
+                 margin: 0;
+                 -webkit-transition: .3s ease-in-out;
+                 transition: .3s ease-in-out;
+                 -webkit-transform: scale(1);
+                 transform: scale(1);
+             }
+           }
+
+           figure:hover img {
+             -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+            }
+
+
+           .caption{
+             display: none;
+             position: absolute;
+             top: 0;
+             left: 0;
+             background: url(../../assets/images/pixel3.png);
+             width: 100%;
+             height: 100%;
+             padding: 8%;
+
+             h3{
+               font-weight: 900;
+               color: #ffffff;
+               font-size: 1.4em;
+               position: relative;
+               top: 30%;
+               text-transform: uppercase;
+             }
+
+             h4{
+               font-size: 1.2em;
+               top: 30%;
+               color:#cfb63a;
+               position: relative;
+               font-weight: bold;
+               text-transform: uppercase;
+
+             }
+           }
+
+
+}
+
+
+
+      .single-event6{
+          padding: 0 !important;
+          position: relative;
+          @include breakpoint(small only) {
+              @include grid-column(12);
+          }
+          @include breakpoint(medium up) {
+              @include grid-column(6);
+          }
+          figure {
+            overflow: hidden; background-color: #000000;
+            img {
+                width: 100%;
+                margin: 0;
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+          }
+
+          figure:hover img {
+            -webkit-transform: scale(1.1);
+             transform: scale(1.1);
+           }
+
+
+          .caption{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../../assets/images/pixel3.png);
+            width: 100%;
+            height: 100%;
+            padding: 8%;
+
+            h3{
+              font-weight: 900;
+              color: #ffffff;
+              font-size: 1.8em;
+              position: relative;
+              top: 30%;
+              text-transform: uppercase;
+            }
+
+            h4{
+              font-size: 1.2em;
+              top: 30%;
+              color:#cfb63a;
+              position: relative;
+              font-weight: bold;
+              text-transform: uppercase;
+
+            }
+          }
+
+
+        }
+
+}
+
+}
+
+#chi-siamo, #page-chi-siamo{
+
+  .persona{
+    @include breakpoint(small) {
+      @include grid-column(12);
+      h4{font-size: 1.7em;}
+      margin-bottom: 10%;
+
+    }
+    @include breakpoint(medium) {
+      h4{font-size: 1.2em;}
+      @include grid-column(4);
+      padding-bottom: 2%;
+      margin-bottom: 0;
+    }
+    @include breakpoint(large) {
+      @include grid-column(4);
+      padding-bottom: 2%;
+      margin-bottom: 0;
+      h4{font-size: 1.3em;}
+    }
+    @include breakpoint(xlarge) {
+      @include grid-column(4);
+      padding-bottom: 2%;
+      margin-bottom: 0;
+      h4{font-size: 1.4em;}
+    }
+
+        .image-wrapper {
+            margin: 0 auto;
+            /*border-radius: 100%;*/
+            /*padding: 5%;*/
+            width: 100%;
+          /*  overflow: hidden;*/
+            position: relative;
+
+            img {
+            height: 100%;
+            width: 100%;
+             display: block;
+            }
+            .cornerLink {
+                opacity: 0;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                padding:  0px;
+                height: 100%;
+                color: #ffffff;
+                background: #000000;
+                text-decoration: none;
+                text-align: center;
+                -webkit-transition: opacity 500ms;
+                -moz-transition: opacity 500ms;
+                -o-transition: opacity 500ms;
+                transition: opacity 500ms;
+
+                  a.sendmail{
+                    position: absolute;
+                    top: 30%;
+                    left: 40%;
+
+                    i.fi-mail{
+                      font-size: 5em;
+                      color: #ffffff;
+                    }
+                    i.fi-mail:hover{
+                      color: #cfb63a;
+                    }
+                  }
+
+            }
+
+          }
+
+          .image-wrapper:hover .cornerLink {
+              opacity: 0.8;
+          }
+
+          .address a{
+            color:#000000;
+            font-weight: bold;
+            @include breakpoint(small) {
+            font-size: 1em;
+            }
+            @include breakpoint(medium) {
+            font-size: 0.8em;
+            }
+          }
+
+          .address a:hover{color: #cfb63a;}
+
+
+
+  }
+
+}
+
+
+
+#dove-siamo{
+  #map{height: 400px;}
+
+}
+
+
+  [data-sticky] {
+    width: 100%;
+  }

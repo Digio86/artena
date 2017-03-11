@@ -1,14 +1,8 @@
 #page {
   @include grid-row();
-  margin-top: 3rem;
+    padding: 5%;
 
   .main-content {
-    @include breakpoint(small) {
       @include grid-column(12);
-    }
-
-    @include breakpoint(medium) {
-      @include grid-column(8);
-    }
   }
 }

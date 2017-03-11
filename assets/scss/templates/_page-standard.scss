@@ -1,0 +1,8 @@
+#page-container{
+  padding: 3% 3% !important;
+  @include grid-row();
+  text-align: center;
+  h1{text-decoration: underline; text-transform: uppercase; font-size:1.5em;padding-bottom: 3%; padding: 0;}
+  h2{text-transform: uppercase !important; font-style: italic; font-weight: bold;font-size:1.1em;}
+
+}

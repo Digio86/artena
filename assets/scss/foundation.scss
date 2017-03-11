@@ -13,6 +13,9 @@
 // Foundation mixins & browser resets
 @import '../components/foundation-sites/scss/foundation';
 
+//Font
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+
 // WP overrides
 @import "global/wp-admin"; // Fix issues with wp-admin bar positioning
 @import "global/wp-overrides"; // Override the default WordPress styling for some elements
@@ -22,12 +25,13 @@
 @import 'font-awesome';
 @import 'motion-ui';
 
+
 // Foundation global styles
 @include foundation-global-styles;
 
 // Individual foundation components
 @include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-forms;
 @include foundation-button;
@@ -77,7 +81,7 @@
 // Modules
 @import "modules/navigation";
 @import "modules/footer";
-@import "modules/sidebar";
+/*@import "modules/sidebar";*/
 @import "modules/editor-style";
 
 // Components
@@ -89,8 +93,12 @@
 
 // Templates
 @import "templates/front";
-@import "templates/kitchen-sink";
+/*@import "templates/kitchen-sink";*/
 @import "templates/page-default";
-@import "templates/page-sidebar-left";
+/*@import "templates/page-sidebar-left";*/
 @import "templates/page-full-width";
 @import "templates/single-post";
+@import "templates/artena";
+@import "templates/page-eventi";
+@import "templates/single-eventi";
+@import "templates/page-contatti";

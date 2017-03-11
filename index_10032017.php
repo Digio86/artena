@@ -70,11 +70,11 @@ $args = array(
 
 <section id="eventi" class="hideme">
   <div class="content"><h3>eventi</h3></div>
-		<div class="content" style="position:relative;">
+		<div class="content">
 	<?php
 	$args = array(
 			'post_type' => 'eventi',
-			'cat' => 5,
+			'category_name' => 'top',
 			'posts_per_page' => 2
 		);
 
@@ -89,22 +89,21 @@ $args = array(
 			$cover = get_field('cover');
 
 	?>
-
+		<a href="<?php echo $link;?>">
 		<div class="single-event6">
-				<a href="<?php echo $link; ?>">
-					<figure>
-						<?php
-							if ( has_post_thumbnail() ) {
-									the_post_thumbnail(900, 600, array( 'center', 'center'));
-								}
-						?>
-						<div class="caption">
-							<h3><?php echo $evento; ?></h3>
-							<h4><?php echo $cliente; ?></h4>
-						</div>
-					</figure>
-				</a>
+			<!--img  class="thumbnail"src="<?php echo $cover['url'];?>" -->
+			<?php
+				if ( has_post_thumbnail() ) {
+						the_post_thumbnail(900, 600, array( 'center', 'center'));
+					}
+			?>
+			<div class="caption">
+				<h3><?php echo $evento; ?></h3>
+				<h4><?php echo $cliente; ?></h4>
 			</div>
+		</div>
+	</a>
+
 <?php
 
 	endwhile;
@@ -118,7 +117,7 @@ wp_reset_postdata();
 
 $args = array(
 		'post_type' => 'eventi',
-		'cat' => 6,
+		'category__not_in' => 5,
 		'posts_per_page' => 3
 	);
 
@@ -133,21 +132,20 @@ $args = array(
 		$cover = get_field('cover');
 
 ?>
+
+		<a href="<?php echo $link;?>">
 			<div class="single-event">
-				<a href="<?php echo $link; ?>">
-					<figure>
-						<?php
-							if ( has_post_thumbnail() ) {
-									the_post_thumbnail(900, 600, array( 'center', 'center'));
-								}
-						?>
+				<?php
+					if ( has_post_thumbnail() ) {
+							the_post_thumbnail(500, 400, array( 'center', 'center'));
+						}
+				?>
 						<div class="caption">
 							<h3><?php echo $evento; ?></h3>
 							<h4><?php echo $cliente; ?></h4>
 						</div>
-					</figure>
-				</a>
-			</div>
+				</div>
+		</a>
 	<?php
 
 		endwhile;
@@ -157,7 +155,6 @@ $args = array(
 	?>
 	</div>
 </section>
-
 
 <section id="chi-siamo" class="hideme">
 	<div class="content">
@@ -183,22 +180,16 @@ $args = array(
 
 						<div class="persona">
 							<div class="image-wrapper">
+							  <!--span class="image-overlay">
+							    <!--span class="contentold hide-for-small-only"><?php echo $mansione; ?></span>
+									<a href="mailto:<?php echo $email; ?>">
+										<i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+									</a>
+							  </span-->
 									<img src="<?php echo $image['url']; ?>">
-									<div class="cornerLink show-for-large">
-										<a href="mailto:<?php echo $email; ?>" class="sendmail">
-											<i class="fi-mail"></i>
-										</a>
-									</div>
-
-
+							<!--h3 class="mansione show-for-small-only"><?php echo $mansione; ?></h3-->
+							<h4><?php echo get_the_title(); ?></h4>
 						</div>
-						<h4><?php echo get_the_title(); ?></h4>
-						<div class="address show-for-small hide-for-large">
-							<a href="mailto:<?php echo $email; ?>">
-								E-mail
-							</a>
-						</div>
-
 					</div>
 						<?php
 					         endif;
