@@ -7858,6 +7858,8 @@ a.thumbnail {
 
 .row {
   max-width: 1200px; }
+  .row .left {
+    text-align: left; }
 
 .footer {
   background-color: #000000;
@@ -7886,9 +7888,9 @@ a.thumbnail {
         padding-left: 5rem; }
     .footer .contact i {
       position: absolute;
-      background-color: #33383b;
-      color: #fff;
-      font-size: 2rem;
+      background-color: #cfb63a;
+      color: #000000;
+      font-size: 1.3rem;
       border-radius: 50%;
       line-height: 1;
       margin: 0 0 0 -4rem;
@@ -7928,7 +7930,8 @@ a.thumbnail {
 
 .logo {
   color: #fff;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-align: left; }
   .logo i {
     margin-right: 0.5rem; }
 
@@ -8354,6 +8357,9 @@ body {
 section {
   padding: 3% 0;
   text-align: center; }
+
+.nopadding {
+  padding-bottom: 0; }
 
 section.container {
   padding: 0 !important; }

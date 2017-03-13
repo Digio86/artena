@@ -211,7 +211,7 @@ $args = array(
  </div>
 </section>
 
-<section id="dove-siamo" class="hideme">
+<section id="dove-siamo" class="hideme nopadding">
 	<div class="content">
 		<h3>dove siamo</h3>
 	</div>
