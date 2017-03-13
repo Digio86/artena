@@ -7885,7 +7885,8 @@ a.thumbnail {
     .footer .contact li {
       margin-bottom: 2rem; }
       .footer .contact li p {
-        padding-left: 5rem; }
+        padding-left: 5rem;
+        font-size: 0.9em; }
     .footer .contact i {
       position: absolute;
       background-color: #cfb63a;

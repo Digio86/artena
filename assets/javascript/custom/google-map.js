@@ -296,7 +296,7 @@
                     "color": "#000000"
                   }
                 ]
-              }				 
+              }
 			 ],
 			 {name: 'Styled Map'});
 
@@ -308,23 +308,31 @@
 	 map.mapTypes.set('styled_map', styledMapType);
 	 map.setMapTypeId('styled_map')
 
- marker = new google.maps.Marker({
+   var image = 'http://www.artena.eu/test/wp-content/themes/FoundationPress/assets/images/marker.png';
+     var beachMarker = new google.maps.Marker({
+       position: {lat: 45.48108850000001, lng: 9.208886399999983},
+       map: map,
+       icon: image
+     });
+/* marker = new google.maps.Marker({
 	 map: map,
-	 draggable: true,
+	 draggable: false,
 	 animation: google.maps.Animation.DROP,
 	 title: 'Argentaria',
 	 position: {lat: 45.48108850000001, lng: 9.208886399999983}
 
 
  });
- marker.addListener('click', toggleBounce);
+ marker.addListener('click', toggleBounce);*/
 }
 
 
-function toggleBounce() {
+
+
+/*function toggleBounce() {
 if (marker.getAnimation() !== null) {
 marker.setAnimation(null);
 } else {
 marker.setAnimation(google.maps.Animation.BOUNCE);
 }
-}
+}*/
