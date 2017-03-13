@@ -27,7 +27,7 @@
       <ul class="contact">
         <li><p><i class="fi-marker"></i>Via Vitruvio, 11 20124 Milano</p></li>
         <li><p><i class="fi-telephone"></i>+39 02/89655729</p></li>
-        <li><p><i class="fi-mail"></i>info@artena.eu</p></li>
+        <li><p><i class="fi-mail"></i><a href="mailto:info@artena.eu">info@artena.eu</a></p></li>
       </ul>
     </div>
     <div class="small-12 medium-12 large-3 columns">

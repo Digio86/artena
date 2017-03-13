@@ -7884,6 +7884,10 @@ a.thumbnail {
     color: #fff; }
     .footer .contact li {
       margin-bottom: 2rem; }
+      .footer .contact li a {
+        color: #ffffff; }
+      .footer .contact li a:hover {
+        text-decoration: underline; }
       .footer .contact li p {
         padding-left: 5rem;
         font-size: 0.9em; }
@@ -8889,6 +8893,21 @@ section h3 {
         padding-left: 0.9375rem; } }
     #contatti .info:last-child:not(:first-child) {
       float: right; }
+    #contatti .info ul.contact {
+      list-style: none;
+      padding: none; }
+      #contatti .info ul.contact li {
+        margin-bottom: 10%; }
+        #contatti .info ul.contact li a {
+          color: #000000; }
+        #contatti .info ul.contact li a:hover {
+          text-decoration: underline; }
+        #contatti .info ul.contact li i {
+          background-color: #cfb63a;
+          font-size: 1.5em;
+          border-radius: 50%;
+          padding: 2% 4%;
+          margin-right: 10px; }
   #contatti .form-contatti {
     width: 66.66667%;
     float: left;
