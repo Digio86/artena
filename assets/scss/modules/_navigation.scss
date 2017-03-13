@@ -3,24 +3,36 @@
 // Navigation breakpoints
 .desktop-menu, .top-bar-left {
   @include show-for(medium);
+  background-color: #cfb63a !important;
 }
 
 #mobile-menu, .title-bar {
   @include hide-for(medium);
+background-color: #cfb63a !important;
 }
 
 // Mobile menu
 .off-canvas {
+
+  background-color: #cfb63a;
   > ul.menu {
     height: 100vh;
     padding: 1rem;
-
+    li.current-menu-item a{
+      color: #ffffff;
+    }
     a {
       color: $white;
       font-weight: 600;
       font-size: rem-calc(18);
       opacity: .75;
+      color: #000000;
+      border-bottom: 1px solid #b39e33;
+
+
     }
+
+
 
     .is-accordion-submenu-parent > a::after {
       display: block;
@@ -38,7 +50,8 @@
       }
   }
 
-  .menu .active > a { background-color: lighten($outer-space, 10%); }
+  .menu .active > a { /*background-color: lighten($outer-space, 10%);*/color: #ffffff;}
+
 
 
 }

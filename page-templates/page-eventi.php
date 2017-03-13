@@ -38,13 +38,17 @@ get_header(); ?>
   ?>
 
       <div class="evento hideme">
-        <a href="<?php echo $link; ?>">
-          <?php
-            if ( has_post_thumbnail() ) {
-                the_post_thumbnail(400, 300, array( 'center', 'center'));
-              }
-          ?>
-        </a>
+        <figure>
+          <a href="<?php echo $link; ?>">
+            <?php
+              if ( has_post_thumbnail() ) {
+                  the_post_thumbnail(400, 300, array( 'center', 'center'));
+                }
+            ?>
+          </a>
+        </figure>
+        <h3><?php echo $evento; ?></h3>
+        <h4><?php echo $cliente; ?></h4>
       </div>
 
       <?php
