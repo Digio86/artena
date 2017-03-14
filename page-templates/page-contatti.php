@@ -8,9 +8,9 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 <div id="contatti" role="main">
-  <header>
+  <!--header>
       <h1 class="entry-title"><?php the_title(); ?></h1>
-  </header >
+  </header -->
   <div class="info">
     <ul class="contact">
       <li><p><i class="fi-marker"></i>Via Vitruvio, 11 20124 Milano</p></li>
