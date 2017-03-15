@@ -21,7 +21,7 @@
         <a href="<?php echo site_url();?>/contatti">Lavora con noi</a>
         <a href="<?php echo site_url();?>/cookie-policy">Cookie-Privacy</a>
       </p>
-      <p class="copywrite">All rights reserved © 2017 - By Artena.eu</p>
+      <p class="copywrite">All rights reserved © 2017 - www.Artena.eu</p>
     </div>
     <div class="small-12 medium-6 large-4 columns">
       <ul class="contact">
