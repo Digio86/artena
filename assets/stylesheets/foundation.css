@@ -14,6 +14,7 @@
  * Licensed under MIT Open Source
  */
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 #wpadminbar {
   position: fixed !important; }
 
@@ -8373,7 +8374,7 @@ body#tinymce {
 
 body {
   background-color: #ffffff;
-  font-family: 'Comfortaa',sans-serif; }
+  font-family: 'Montserrat',sans-serif; }
 
 section {
   padding: 3% 0;
@@ -8386,7 +8387,6 @@ section.container {
   padding: 0 !important; }
 
 section h3 {
-  font-family: 'Comfortaa',sans-serif;
   margin-bottom: 2%;
   text-transform: uppercase;
   font-weight: 700;
