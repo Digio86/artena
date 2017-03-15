@@ -7784,7 +7784,7 @@ a.thumbnail {
         font-size: 0.8rem; } }
     @media screen and (min-width: 40em) and (orientation: landscape) {
       .top-bar .menu a {
-        font-size: 1em; } }
+        font-size: 0.9em; } }
     @media screen and (min-width: 40em) and (min-width: 75em) {
       .top-bar .menu a {
         font-size: 1.3rem; } }
