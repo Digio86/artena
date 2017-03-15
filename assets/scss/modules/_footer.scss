@@ -37,10 +37,10 @@
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    background-color: #33383b;
+    background-color: #cfb53b;
     border-radius: 2px;
     font-size: 1.5rem;
-    color: #fff;
+    color: #000000;
     text-align: center;
     line-height: 35px;
     margin: 0 3px 0 0;
@@ -73,6 +73,11 @@
       vertical-align: middle;
       padding: .25em .45em;
     }
+
+      .fi-social-facebook{
+        color: #000000 !important;
+      }
+
   }
 
   .copywrite {

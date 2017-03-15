@@ -7891,10 +7891,10 @@ a.thumbnail {
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    background-color: #33383b;
+    background-color: #cfb53b;
     border-radius: 2px;
     font-size: 1.5rem;
-    color: #fff;
+    color: #000000;
     text-align: center;
     line-height: 35px;
     margin: 0 3px 0 0; }
@@ -7922,6 +7922,8 @@ a.thumbnail {
       margin: 0 0 0 -4rem;
       vertical-align: middle;
       padding: .25em .45em; }
+    .footer .contact .fi-social-facebook {
+      color: #000000 !important; }
   .footer .copywrite {
     color: #8f9296;
     font-size: 0.875rem;

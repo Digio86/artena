@@ -34,7 +34,7 @@
     <div class="small-12 medium-12 large-3 columns">
       <p class="about">Seguici su:</p>
       <ul class="inline-list social">
-        <a href="#"><i class="fi-social-facebook"></i></a>
+        <a href="https://www.facebook.com/groups/752027778226882/" target="_blank"><i class="fi-social-facebook"></i></a>
       </ul>
     </div>
   </div>
