@@ -14,6 +14,24 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+		<script type="text/javascript">
+		    window.cookieconsent_options = {"message":"Questo sito utilizza cookie, anche di terze parti, per inviarti servizi in linea con le tue preferenze. Se vuoi saperne di più o negare il consenso a tutti o ad alcuni cookie leggi l'informativa estesa sui cookie.","dismiss":"HO CAPITO","learnMore":"Maggiori informazioni","link":"http://www.argentaia.com/test/cookie-policy/","theme":"dark-top"};
+		</script>
+
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+		<!-- End Cookie Consent plugin -->
+
+
+
+		<!-- link rel="icon" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/images/icons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/images/icons/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/images/icons/apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/images/icons/apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/images/icons/apple-touch-icon-precomposed.png" -->
+
+
 		<?php wp_head(); ?>
 	</head>
 	<body >
@@ -64,7 +82,7 @@
 
 
 			</div>
-			
+
 		</div>
 
 	<div id="backtotop" class="hide-for-small-only">

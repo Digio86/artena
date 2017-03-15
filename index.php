@@ -14,6 +14,7 @@ $args = array(
 	if ( $the_query->have_posts() ) :
 		while ( $the_query->have_posts() ) : $the_query->the_post();
 			$slide = get_field('slide');
+			$frase = get_field('frase');
 			$link = get_field('link');
 			if( !empty($slide) ):
 
@@ -26,6 +27,9 @@ $args = array(
 						<img class="orbit-image grey-off" src="<?php echo $slide['url']; ?>">
 					</a>
 				<?php } ?>
+				<div class="orbit-caption">
+					<h1><?php echo $frase; ?></h1>
+</div>
 			</li>
 		<?php
 				endif;

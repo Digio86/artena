@@ -1,5 +1,6 @@
 #page-eventi{
   padding: 5%;
+  h1{font-size: 3rem; text-transform: uppercase;}
    .content-eventi{
      @include flex-grid-row();
        @include breakpoint(medium down) {

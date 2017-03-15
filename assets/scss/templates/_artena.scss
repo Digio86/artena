@@ -2,8 +2,11 @@ body{background-color:$white; font-family: 'Comfortaa',sans-serif;}
 section {padding: 3% 0; text-align: center;}
 .nopadding{padding-bottom: 0;}
 section.container{padding: 0 !important;}
-section h3{font-family: 'Comfortaa',sans-serif; margin-bottom: 2%; text-transform: uppercase; font-weight: 700;  color: #000;}
-
+section h3{font-family: 'Comfortaa',sans-serif; margin-bottom: 2%; text-transform: uppercase; font-weight: 700;  color: #000; font-size: 3rem;}
+ul {list-style: none;}
+a {color: #000000; font-weight: bold;}
+a.more-link{font-size: 1em;}
+a.more-link:hover{color:#cfb63a;}
 
 
 /*Social*/
@@ -55,6 +58,24 @@ section h3{font-family: 'Comfortaa',sans-serif; margin-bottom: 2%; text-transfor
   ul.orbit-container{
     height: inherit !important;
   }
+
+.orbit-caption{
+  bottom: 50%;
+  h1{
+    @include breakpoint(small) {
+    font-size: 2em;
+    }
+    @include breakpoint(medium) {
+      font-size: 5em;
+    }
+    @include breakpoint(large) {
+      font-size: 7em;
+    }
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
 }
 
 #about-us{

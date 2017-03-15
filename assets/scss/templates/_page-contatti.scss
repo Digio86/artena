@@ -8,7 +8,7 @@
       height: 2.4375rem;
       margin: 0 0 1rem;
       padding: 0.5rem;
-      /*border: 1px solid #cacaca;*/
+      border-bottom: 1px solid #000000 !important;
       border: none;
       border-radius: 0;
       background-color: #ffffff;
@@ -21,6 +21,11 @@
       -moz-appearance: none;
       appearance: none;
   }
+
+label{
+    font-size: 1rem;
+    font-weight: bold;
+}
 
   [type="submit"]{
     padding: 2%;
@@ -35,6 +40,15 @@
   [type="submit"]:hover{
     cursor: pointer;
   }
+
+span.wpcf7-not-valid-tip{
+  font-size: 0.9em;
+  text-transform: lowercase;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok{
+  border: none;
+}
 
 input{
   padding: 2% 0;
@@ -55,15 +69,23 @@ input{
   background-color: #fff;
   z-index: 999;
     .info{
+      h4{
+        padding-bottom: 20px;
+      }
+
       @include breakpoint(medium down) {
         @include grid-column(12);
         text-align: center;
     }
     @include grid-column(4);
     text-align: left;
+    ul{
+        margin-left: 0 !important;
+    }
       ul.contact{
         list-style: none;
         padding:none;
+        margin-left: 0 !important;
 
         li{
           margin-bottom: 10%;

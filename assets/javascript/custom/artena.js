@@ -69,15 +69,28 @@ $(document).ready(function() {
   );
 });
 
+
+/*Classe menu */
 $(window).scroll(function() {
-  if($(this).scrollTop()>50){
+  if($(this).scrollTop()>100){
   $(".is-stuck").addClass("smaller");
   $(".is-stuck").removeClass("bigger");
-  $(".orbit-image").addClass("grey-on");
+
 
 } else {
 $(".is-stuck").removeClass("smaller");
 $(".top-bar").addClass("bigger");
+
+ }
+  });
+
+
+/*Grey imagine*/
+$(window).scroll(function() {
+  if($(this).scrollTop()>500){
+  $(".orbit-image").addClass("grey-on");
+
+} else {
 $("img.orbit-image").removeClass("grey-on");
 
  }

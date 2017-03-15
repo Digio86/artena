@@ -7781,6 +7781,12 @@ a.thumbnail {
     @media screen and (min-width: 40em) and (min-width: 40em) and (max-width: 63.9375em) {
       .top-bar .menu a {
         font-size: 0.8rem; } }
+    @media screen and (min-width: 40em) and (orientation: landscape) {
+      .top-bar .menu a {
+        font-size: 1em; } }
+    @media screen and (min-width: 40em) and (min-width: 75em) {
+      .top-bar .menu a {
+        font-size: 1.3rem; } }
 
 @media screen and (min-width: 40em) {
       .top-bar .menu a:hover:not(.button) {
@@ -7858,8 +7864,12 @@ a.thumbnail {
 
 .row {
   max-width: 1200px; }
-  .row .left {
-    text-align: left; }
+  @media screen and (max-width: 39.9375em) {
+    .row .left {
+      text-align: center; } }
+  @media print, screen and (min-width: 64em) {
+    .row .left {
+      text-align: left; } }
 
 .footer {
   background-color: #000000;
@@ -7915,7 +7925,7 @@ a.thumbnail {
     color: #fff;
     padding: 3rem 0 2rem;
     margin: 0;
-    font-size: 0.875rem; }
+    font-size: 0.8rem; }
     .footer .footer-links a::after {
       content: "•";
       padding: 0 0.2rem 0 0.4rem; }
@@ -8304,6 +8314,9 @@ body#tinymce {
   margin-right: auto;
   margin-left: auto;
   padding: 5%; }
+  #page h1 {
+    font-size: 3rem;
+    text-transform: uppercase; }
   #page::before, #page::after {
     display: table;
     content: ' '; }
@@ -8374,7 +8387,21 @@ section h3 {
   margin-bottom: 2%;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000; }
+  color: #000;
+  font-size: 3rem; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #000000;
+  font-weight: bold; }
+
+a.more-link {
+  font-size: 1em; }
+
+a.more-link:hover {
+  color: #cfb63a; }
 
 /*Social*/
 .fi-arrow-up {
@@ -8428,6 +8455,18 @@ section h3 {
     /* transition: all 1s linear;*/ }
   #sliders ul.orbit-container {
     height: inherit !important; }
+  #sliders .orbit-caption {
+    bottom: 50%; }
+    #sliders .orbit-caption h1 {
+      font-size: 2em;
+      text-transform: uppercase;
+      font-weight: 700; }
+      @media print, screen and (min-width: 40em) {
+        #sliders .orbit-caption h1 {
+          font-size: 5em; } }
+      @media print, screen and (min-width: 64em) {
+        #sliders .orbit-caption h1 {
+          font-size: 7em; } }
 
 #eventi {
   max-width: 100% !important; }
@@ -8691,6 +8730,9 @@ section h3 {
 
 #page-eventi {
   padding: 5%; }
+  #page-eventi h1 {
+    font-size: 3rem;
+    text-transform: uppercase; }
   #page-eventi .content-eventi {
     max-width: 75rem;
     margin-right: auto;
@@ -8859,7 +8901,7 @@ section h3 {
     height: 2.4375rem;
     margin: 0 0 1rem;
     padding: 0.5rem;
-    /*border: 1px solid #cacaca;*/
+    border-bottom: 1px solid #000000 !important;
     border: none;
     border-radius: 0;
     background-color: #ffffff;
@@ -8871,6 +8913,9 @@ section h3 {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
+  #contatti label {
+    font-size: 1rem;
+    font-weight: bold; }
   #contatti [type="submit"] {
     padding: 2%;
     color: #000000 !important;
@@ -8881,6 +8926,11 @@ section h3 {
     background-color: #cfb63a  !important; }
   #contatti [type="submit"]:hover {
     cursor: pointer; }
+  #contatti span.wpcf7-not-valid-tip {
+    font-size: 0.9em;
+    text-transform: lowercase; }
+  #contatti div.wpcf7-validation-errors, #contatti div.wpcf7-mail-sent-ok {
+    border: none; }
   #contatti input {
     padding: 2% 0; }
   #contatti textarea {
@@ -8898,6 +8948,8 @@ section h3 {
     padding-right: 0.625rem;
     padding-left: 0.625rem;
     text-align: left; }
+    #contatti .info h4 {
+      padding-bottom: 20px; }
     @media screen and (max-width: 63.9375em) {
       #contatti .info {
         width: 100%;
@@ -8918,9 +8970,12 @@ section h3 {
         padding-left: 0.9375rem; } }
     #contatti .info:last-child:not(:first-child) {
       float: right; }
+    #contatti .info ul {
+      margin-left: 0 !important; }
     #contatti .info ul.contact {
       list-style: none;
-      padding: none; }
+      padding: none;
+      margin-left: 0 !important; }
       #contatti .info ul.contact li {
         margin-bottom: 10%; }
         #contatti .info ul.contact li a {
