@@ -70,7 +70,7 @@ background-color: #cfb63a !important;
 @include breakpoint(medium up) {
 // Tablet and desktop menu
 .sticky-container{
-  height: 134px !important;
+  height: 130px !important;
 }
 
 .top-bar {
@@ -79,6 +79,7 @@ transition: all 0.2s ease-out;
 background-color: #cfb63a;
 border-bottom: 1px solid #000000;
 opacity: 1;
+  height: 130px !important;
 max-width: 100% !important;
 
   ul{
@@ -157,15 +158,19 @@ font-size: 1.3rem;
 .smaller  {
   padding: 1rem;
   opacity: 0.9;
+  height: 100px !important;
   transition: all 0.5s ease-out;
+
+    .menu a{
+      font-size: 1.2em;
+    }
 }
 
 //.smaller img { width: 100px; transition: all 0.5s linear; }
 
-.bigger  {
-  /*padding: 2rem;*/
+/*.bigger  {
   transition: all 0.2s ease-in;
-}
+}*/
 
 // Basic styles for post navigation. Nicolas Gallagher's "Micro clearfix"
 // https://css-tricks.com/snippets/css/clear-fix/

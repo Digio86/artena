@@ -7752,7 +7752,7 @@ a.thumbnail {
 
 @media screen and (min-width: 40em) {
   .sticky-container {
-    height: 134px !important; }
+    height: 130px !important; }
   .top-bar {
     padding: 2rem;
     -webkit-transition: all 0.2s ease-out;
@@ -7760,6 +7760,7 @@ a.thumbnail {
     background-color: #cfb63a;
     border-bottom: 1px solid #000000;
     opacity: 1;
+    height: 130px !important;
     max-width: 100% !important; }
     .top-bar ul {
       background-color: #cfb63a !important; }
@@ -7833,12 +7834,14 @@ a.thumbnail {
   .smaller {
     padding: 1rem;
     opacity: 0.9;
+    height: 100px !important;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
-  .bigger {
-    /*padding: 2rem;*/
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in; }
+    .smaller .menu a {
+      font-size: 1.2em; }
+  /*.bigger  {
+  transition: all 0.2s ease-in;
+}*/
   .post-navigation:before,
   .post-navigation:after {
     content: "";

@@ -74,12 +74,12 @@ $(document).ready(function() {
 $(window).scroll(function() {
   if($(this).scrollTop()>100){
   $(".is-stuck").addClass("smaller");
-  $(".is-stuck").removeClass("bigger");
+  /*$(".is-stuck").removeClass("bigger");*/
 
 
 } else {
 $(".is-stuck").removeClass("smaller");
-$(".top-bar").addClass("bigger");
+/*$(".top-bar").addClass("bigger");*/
 
  }
   });
