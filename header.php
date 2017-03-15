@@ -34,30 +34,9 @@
 
 		<?php wp_head(); ?>
 	</head>
-<<<<<<< HEAD
+
 	<body >
 		<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
-=======
-	<body <?php body_class(); ?>>
-	<?php do_action( 'foundationpress_after_body' ); ?>
-
-	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
-	<div class="off-canvas-wrapper">
-		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
-	<?php endif; ?>
-
-	<?php do_action( 'foundationpress_layout_start' ); ?>
-
-	<header id="masthead" class="site-header" role="banner">
-		<div class="title-bar" data-responsive-toggle="mobile-menu">
-			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			</div>
-		</div>
->>>>>>> c067a86f5e526ab35eb48a25577ddc07f372e181
-
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
 
 		<div class="off-canvas-wrapper">
