@@ -20,11 +20,15 @@ require_once( 'library/cleanup.php' );
 /** Required for Foundation to work properly */
 require_once( 'library/foundation.php' );
 
+/** Format comments */
+require_once( 'library/class-foundationpress-comments.php' );
+
 /** Register all navigation menus */
 require_once( 'library/navigation.php' );
 
 /** Add menu walkers for top-bar and off-canvas */
-require_once( 'library/menu-walkers.php' );
+require_once( 'library/class-foundationpress-top-bar-walker.php' );
+require_once( 'library/class-foundationpress-mobile-walker.php' );
 
 /** Create widget areas in sidebar and footer */
 require_once( 'library/widget-areas.php' );
@@ -48,6 +52,7 @@ require_once( 'library/sticky-posts.php' );
 require_once( 'library/responsive-images.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
+<<<<<<< HEAD
 // require_once( 'library/protocol-relative-theme-assets.php' );
 
 
@@ -119,3 +124,6 @@ function custom_post() {
 
 // Inizializzazione della funzione
 add_action( 'init', 'custom_post');
+=======
+// require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
+>>>>>>> c067a86f5e526ab35eb48a25577ddc07f372e181

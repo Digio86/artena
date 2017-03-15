@@ -12,7 +12,25 @@
 		<div class="entry-content">
 			<?php the_content(); ?>
 		</div>
+<<<<<<< HEAD
 
+=======
+		<footer>
+			<?php
+				wp_link_pages(
+					array(
+						'before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ),
+						'after'  => '</p></nav>',
+					)
+				);
+			?>
+			<p><?php the_tags(); ?></p>
+		</footer>
+		<?php the_post_navigation(); ?>
+		<?php do_action( 'foundationpress_post_before_comments' ); ?>
+		<?php comments_template(); ?>
+		<?php do_action( 'foundationpress_post_after_comments' ); ?>
+>>>>>>> c067a86f5e526ab35eb48a25577ddc07f372e181
 	</article>
 <?php endwhile;?>
 
