@@ -7926,8 +7926,8 @@ a.thumbnail {
       color: #000000 !important; }
   .footer .copywrite {
     color: #8f9296;
-    font-size: 0.875rem;
-    margin: 0 0 1rem 0; }
+    font-size: 0.7rem;
+    margin: 0; }
   .footer .about {
     color: #92999f;
     font-size: 0.875rem;
@@ -8335,6 +8335,17 @@ body#tinymce {
     content: ' '; }
   #page::after {
     clear: both; }
+  #page .chi-siamo {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
   #page .main-content {
     width: 100%;
     float: left;

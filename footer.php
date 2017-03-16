@@ -21,7 +21,10 @@
         <a href="<?php echo site_url();?>/contatti">Lavora con noi</a>
         <a href="<?php echo site_url();?>/cookie-policy">Cookie-Privacy</a>
       </p>
-      <p class="copywrite">All rights reserved © 2017 - www.Artena.eu</p>
+      <p class="copywrite">Artena srl</p>
+      <p class="copywrite">p.i. 06128850960</p>
+      <p class="copywrite">Registro Impres di MI n° REA 1872021</p>
+      <p class="copywrite" style="margin-bottom:20px;">CAP. SOC. €33.000,00 I.V.</p>
     </div>
     <div class="small-12 medium-6 large-4 columns">
       <ul class="contact">
