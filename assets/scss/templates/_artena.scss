@@ -224,8 +224,8 @@ a.more-link:hover{color:#cfb63a;}
 
   .persona{
     @include breakpoint(small) {
-      @include grid-column(12);
-      h4{font-size: 1.7em;}
+      @include grid-column(4);
+      h4{font-size: 0.8em;}
       margin-bottom: 10%;
 
     }

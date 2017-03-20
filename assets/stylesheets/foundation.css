@@ -8635,7 +8635,7 @@ a.more-link:hover {
           text-transform: uppercase; }
 
 #chi-siamo .persona, #page-chi-siamo .persona {
-  width: 100%;
+  width: 33.33333%;
   float: left;
   padding-right: 0.625rem;
   padding-left: 0.625rem;
@@ -8647,7 +8647,7 @@ a.more-link:hover {
   #chi-siamo .persona:last-child:not(:first-child), #page-chi-siamo .persona:last-child:not(:first-child) {
     float: right; }
   #chi-siamo .persona h4, #page-chi-siamo .persona h4 {
-    font-size: 1.7em; }
+    font-size: 0.8em; }
   @media print, screen and (min-width: 40em) {
     #chi-siamo .persona, #page-chi-siamo .persona {
       width: 33.33333%;
