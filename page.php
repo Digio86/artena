@@ -34,14 +34,14 @@
    				?>
           <div class="persona">
             <div class="image-wrapper">
-                <img src="<?php echo $image['url']; ?>">
+                <img src="<?php echo $image['url']; ?>" class="filtro-grigio">
                 <div class="cornerLink show-for-large">
                   <a href="mailto:<?php echo $email; ?>" class="sendmail">
                     <i class="fi-mail"></i>
                   </a>
                 </div>
           </div>
-          <h4><?php echo get_the_title(); ?></h4>
+          <!--h4><?php echo get_the_title(); ?></h4-->
           <div class="address show-for-small hide-for-large">
             <a href="mailto:<?php echo $email; ?>">
               E-mail

@@ -64,13 +64,13 @@ a.more-link:hover{color:#cfb63a;}
   bottom: 40%;
   h1{
     @include breakpoint(small) {
-    font-size: 2em;
+    font-size: 1em;
     }
     @include breakpoint(medium) {
-      font-size: 5em;
+      font-size: 3em;
     }
     @include breakpoint(large) {
-      font-size: 7em;
+      font-size: 5em;
     }
     text-transform: uppercase;
     font-weight: 700;
@@ -256,10 +256,16 @@ a.more-link:hover{color:#cfb63a;}
           /*  overflow: hidden;*/
             position: relative;
 
+
+
             img {
             height: 100%;
             width: 100%;
              display: block;
+            }
+
+            img.filtro-grigio{
+              filter: grayscale(1);
             }
             .cornerLink {
                 opacity: 0;
@@ -273,6 +279,8 @@ a.more-link:hover{color:#cfb63a;}
                 background: #000000;
                 text-decoration: none;
                 text-align: center;
+
+
                 -webkit-transition: opacity 500ms;
                 -moz-transition: opacity 500ms;
                 -o-transition: opacity 500ms;

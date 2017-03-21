@@ -8481,15 +8481,15 @@ a.more-link:hover {
   #sliders .orbit-caption {
     bottom: 40%; }
     #sliders .orbit-caption h1 {
-      font-size: 2em;
+      font-size: 1em;
       text-transform: uppercase;
       font-weight: 700; }
       @media print, screen and (min-width: 40em) {
         #sliders .orbit-caption h1 {
-          font-size: 5em; } }
+          font-size: 3em; } }
       @media print, screen and (min-width: 64em) {
         #sliders .orbit-caption h1 {
-          font-size: 7em; } }
+          font-size: 5em; } }
 
 #eventi {
   max-width: 100% !important; }
@@ -8710,6 +8710,9 @@ a.more-link:hover {
       height: 100%;
       width: 100%;
       display: block; }
+    #chi-siamo .persona .image-wrapper img.filtro-grigio, #page-chi-siamo .persona .image-wrapper img.filtro-grigio {
+      -webkit-filter: grayscale(1);
+              filter: grayscale(1); }
     #chi-siamo .persona .image-wrapper .cornerLink, #page-chi-siamo .persona .image-wrapper .cornerLink {
       opacity: 0;
       position: absolute;

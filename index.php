@@ -187,7 +187,7 @@ $args = array(
 
 						<div class="persona">
 							<div class="image-wrapper">
-									<img src="<?php echo $image['url']; ?>">
+									<img src="<?php echo $image['url']; ?>" class="filtro-grigio">
 									<div class="cornerLink show-for-large">
 										<a href="mailto:<?php echo $email; ?>" class="sendmail">
 											<i class="fi-mail"></i>
