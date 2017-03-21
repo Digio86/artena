@@ -9,6 +9,14 @@ a {color: #000000; font-weight: bold;}
 a.more-link{font-size: 1em;}
 a.more-link:hover{color:#cfb63a;}
 
+.row.services{
+  padding: 0 0 5% 0;
+    p{
+      padding: 0 1%;
+      font-size: 1.2em;
+      line-height: 20px;
+    }
+}
 
 /*Social*/
 .fi-arrow-up{font-size: 1.5rem; color: #000000;}
@@ -80,7 +88,14 @@ a.more-link:hover{color:#cfb63a;}
 }
 
 #about-us{
-
+  a.button.large{
+    border: 5px solid #cfb63a;
+    color: #000000;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight:400;
+  }
 }
 
 #eventi{

@@ -65,6 +65,8 @@ $args = array(
 		wp_reset_postdata();
 
 		?>
+
+		<a class="button large" href="about-us">altro ...</a>
 	</div>
 </section>
 
