@@ -51,7 +51,8 @@
    						$mansione = get_field('mansione');
    						if( !empty($image) ):
    				?>
-          <div class="persona">
+          <div class="persona <?php if ($the_query->current_post +1 == $the_query->post_count) {
+             echo " end"; } ?>" style="float:left;">
             <div class="image-wrapper">
                 <img src="<?php echo $image['url']; ?>" class="filtro-grigio">
                 <div class="cornerLink show-for-large">

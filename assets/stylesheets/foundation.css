@@ -8338,14 +8338,12 @@ body#tinymce {
   #page .chi-siamo {
     max-width: 75rem;
     margin-right: auto;
-    margin-left: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap; }
+    margin-left: auto; }
+    #page .chi-siamo::before, #page .chi-siamo::after {
+      display: table;
+      content: ' '; }
+    #page .chi-siamo::after {
+      clear: both; }
   #page .main-content {
     width: 100%;
     float: left;

@@ -4,7 +4,7 @@
     padding: 5%;
 
 .chi-siamo{
-    @include flex-grid-row();
+    @include grid-row();
 }
   .main-content {
       @include grid-column(12);
