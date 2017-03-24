@@ -1,8 +1,16 @@
 <?php get_header(); ?>
-
+</div>
 <section id="sliders">
-	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+	<div class="orbit" role="region" aria-label="Categories Slider"
+		data-orbit
+		data-use-m-u-i="true"
+		data-auto-play="true"
+		data-pause-on-hover="false"
+		data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;"
+		data-timer-delay=3000>
 		 <ul class="orbit-container">
+									<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span> &#9664;&#xFE0E;</button>
+	 								<button class="orbit-next"><span class="show-for-sr">Next Slide</span> &#9654;&#xFE0E;</button>
 <?php
 $args = array(
 		'post_type' => 'sliders',
@@ -19,6 +27,7 @@ $args = array(
 			if( !empty($slide) ):
 
 ?>
+
     	<li class="is-active orbit-slide">
 				<?php if (empty($link)){ ?>
           <img class="orbit-image grey-off" src="<?php echo $slide['url']; ?>">
@@ -66,7 +75,7 @@ $args = array(
 
 		?>
 
-		<a class="button large" href="about-us">altro ...</a>
+		<!--a class="button large" href="about-us">altro ...</a-->
 	</div>
 </section>
 

@@ -1,32 +1,8 @@
-<?php
-/**
- * The template for displaying the header
- *
- * Displays all of the head element and everything up until the "container" div.
- *
- * @package FoundationPress
- * @since FoundationPress 1.0.0
- */
-
-?>
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?> >
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-		<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-
-		<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
-		<!--script type="text/javascript">
-		    window.cookieconsent_options = {"message":"Questo sito utilizza cookie, anche di terze parti, per inviarti servizi in linea con le tue preferenze. Se vuoi saperne di più o negare il consenso a tutti o ad alcuni cookie leggi l'informativa estesa sui cookie.","dismiss":"HO CAPITO","learnMore":"Maggiori informazioni","link":"http://www.artena.eu/test/cookie-policy/","theme":"dark-top"};
-		</script>
-
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script-->
-		<!-- End Cookie Consent plugin -->
-
-
-
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/images/icons/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/images/icons/apple-touch-icon-144x144.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/images/icons/apple-touch-icon-114x114.png">

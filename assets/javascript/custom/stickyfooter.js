@@ -1,6 +1,6 @@
 
 jQuery(window).bind(' load resize orientationChange ', function () {
-   var footer = jQuery("#footer-container");
+   var footer = jQuery(".footer");
    var pos = footer.position();
    var height = jQuery(window).height();
    height = height - pos.top;

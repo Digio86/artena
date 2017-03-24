@@ -308,7 +308,7 @@
 	 map.mapTypes.set('styled_map', styledMapType);
 	 map.setMapTypeId('styled_map')
 
-   var image = 'http://www.artena.eu/test/wp-content/themes/FoundationPress/assets/images/marker.png';
+   var image = 'http://www.artena.eu/test/wp-content/themes/artena/assets/images/marker.png';
      var beachMarker = new google.maps.Marker({
        position: {lat: 45.48108850000001, lng: 9.208886399999983},
        map: map,

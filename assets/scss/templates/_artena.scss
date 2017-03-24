@@ -85,6 +85,17 @@ a.more-link:hover{color:#cfb63a;}
   }
 }
 
+.orbit-previous, .orbit-next{
+
+    @include breakpoint(large) {
+  font-size: 3em;
+  top:53%;
+}
+}
+.orbit-previous:hover, .orbit-next:hover{
+  background-color: none;
+}
+
 }
 
 #about-us{
