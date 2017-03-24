@@ -8495,6 +8495,9 @@ a.more-link:hover {
       @media print, screen and (min-width: 64em) {
         #sliders .orbit-caption h1 {
           font-size: 5em; } }
+  @media screen and (max-width: 39.9375em) {
+    #sliders .orbit-previous, #sliders .orbit-next {
+      display: none; } }
   @media print, screen and (min-width: 64em) {
     #sliders .orbit-previous, #sliders .orbit-next {
       font-size: 3em;

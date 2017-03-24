@@ -87,6 +87,10 @@ a.more-link:hover{color:#cfb63a;}
 
 .orbit-previous, .orbit-next{
 
+  @include breakpoint(small only) {
+    display: none;
+  }
+
     @include breakpoint(large) {
   font-size: 3em;
   top:53%;
