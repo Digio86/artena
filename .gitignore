@@ -1,11 +1,14 @@
+$ cat .gitignore
+
+# Can ignore specific files
 .DS_Store
-*.sass-cache*
-*.log
-node_modules/
-assets/stylesheets/
-assets/components/
-assets/javascript/vendor/
-assets/javascript/foundation.js
-assets/javascript/custom/demosite.js
-packaged/
-wpcs/
+
+# Use wildcards as well
+*~
+*.swp
+
+# Can also ignore all directories and files in a directory.
+tmp/**/* 
+
+node_modules
+bower_components
