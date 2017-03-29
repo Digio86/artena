@@ -310,7 +310,7 @@
 
    var image = 'http://www.artena.eu/test/wp-content/themes/artena/assets/images/marker.png';
      var beachMarker = new google.maps.Marker({
-       position: {lat: 45.48108850000001, lng: 9.208886399999983},
+       position: {lat: 45.4810885, lng: 9.2088864},
        map: map,
        icon: image
      });

@@ -49,12 +49,13 @@
    						$image = get_field('foto');
    						$email = get_field('email');
    						$mansione = get_field('mansione');
+              $nome = get_the_title();
    						if( !empty($image) ):
    				?>
           <div class="persona <?php if ($the_query->current_post +1 == $the_query->post_count) {
              echo " end"; } ?>" style="float:left;">
             <div class="image-wrapper">
-                <img src="<?php echo $image['url']; ?>" class="filtro-grigio">
+                <img src="<?php echo $image['url']; ?>" <?php if($nome != "Amministrazione"){?>class="filtro-grigio"<?php } ?>>
                 <div class="cornerLink show-for-large">
                   <a href="mailto:<?php echo $email; ?>" class="sendmail">
                     <i class="fi-mail"></i>

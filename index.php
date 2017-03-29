@@ -191,6 +191,7 @@ $args = array(
 							while ( $the_query->have_posts() ) : $the_query->the_post();
 								$image = get_field('foto');
 								$email = get_field('email');
+								$nome = get_the_title();
 								$mansione = get_field('mansione');
 
 								if( !empty($image) ):
@@ -198,7 +199,7 @@ $args = array(
 
 						<div class="persona">
 							<div class="image-wrapper">
-									<img src="<?php echo $image['url']; ?>" class="filtro-grigio">
+									<img src="<?php echo $image['url']; ?>" <?php if($nome != "Amministrazione"){?>class="filtro-grigio"<?php } ?>>
 									<div class="cornerLink show-for-large">
 										<a href="mailto:<?php echo $email; ?>" class="sendmail">
 											<i class="fi-mail"></i>
